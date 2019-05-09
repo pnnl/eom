@@ -1,0 +1,60 @@
+/**
+ * @namespace utility
+ *
+ * The utility namespace includes the files found in the utilities directory.
+ * These files handle file and directory control, generic parsing, and generic
+ * exception handling.
+ */
+
+/**
+ * @defgroup utility  The classes/structures in the utility namespace
+ *
+ */
+ 
+ 
+/**
+ * @namespace interpreter The interpreter name space contains the classes 
+ * responsible for reading the user input and for constructing the main
+ * simulation data spaces (parameter and interface spaces). The parameter
+ * space is stored in a metadata file then deleted after the simulation is
+ * initialized.
+ *
+ */
+
+
+/**
+ * @defgroup interpreter classes the interpreter namespace
+ *
+ */
+ 
+ 
+/**
+ * @namespace model The model namespace contains both the abstract and general
+ * purpose classes required to create a model that is consistent with the 
+ * RIM simulation engine. The model namespace also includes user defined models.
+ *
+ */
+
+
+/**
+ * @defgroup model These are the classes associated with arbitrary models. They
+ * include the RIMModel abstractions and classes for handling various time 
+ * series data. All members of this group belong to the model namespace.
+ */
+
+/**
+ * @defgroup basemodel These are the classes associated with the base model.
+ */
+ 
+ 
+/**
+ * @namespace simulator The simulator namespace contains the simulation engine,
+ * the simulations clock and the SD Interface class.
+ *
+ */
+
+
+/**
+ * @defgroup simulator classes the simulator namespace
+ *
+ */
