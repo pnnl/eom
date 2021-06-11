@@ -1,0 +1,4 @@
+Conventional Generator,Heat-rate curve (Power, Input),ramp down rate (MW/hr),ramp up rate (MW/hr),shutdown cost (K$),startup cost (K$),Balancing Authority,Zone,Fuel Type,Fuel Cost ($/MMBtu),can commit,can load follow,can regulate,minimum uptime (hours),minimum downtime(hours),NOx Rate,SOx Rate,CO2 rate
+Generator 000,(30;30);(60;60)#(60;60);(100;100)#(100;100);(120;120)#(120;120);(150;150),600,300,10,10,0,0,NUCLEAR,199,TRUE,TRUE,TRUE,1,1,10,10,10
+Generator 001,(30;30);(60;60)#(60;60);(100;100)#(100;100);(120;120)#(120;120);(150;150),800,400,10,10,0,0,COAL,199,TRUE,TRUE,TRUE,2,2,10,10,10
+Generator 010,(30;30);(60;60)#(60;60);(100;100)#(100;100);(120;120)#(120;120);(150;150),1000,500,10,10,0,0,NATURALGAS,199,TRUE,TRUE,TRUE,3,3,10,10,10

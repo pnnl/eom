@@ -1,0 +1,2 @@
+Simulation,Start date (00:00),End date (23:59),Size of dump file,Time Step (min),DayAheadRecompute (hrs),Day ahead trigger time,Day ahead time step (min),Day ahead lookahead length (hr),Load following time steps (min),Load following lookahead length (min),Regulation time step (min),Hydro time step (min),Days of Forecast Buffer,Ramp to start (in days),N repeats,Repeat Type (none; mc [monte carlo];  sa [sensitivity analysis]),CPX_PARAM_EPGAP
+Test 1,4/2/2004,4/2/2004,1440,1,168,0,60,168,0,0,0,0,1,370,0,none,0.02

@@ -1,0 +1,24 @@
+<Simulation Requirements>  : simulation.csv
+%%%%
+#Model Parameters and Initialization
+<Balancing Authority>      : ba.csv
+<Zone>                     : zone.csv
+#<Conventional Generator >  : Generators-sorted-deduped.csv
+<Conventional Generator >  : new_simplify_generatorlist.csv
+#<Conventional Generator >  : Generators-sorted-deduped-withO&M-unix3.csv
+#<Hydro>                   : dams.csv
+#<Storage>                 : storage.csv
+%%%%
+
+Time Series File Set
+<Load>                     : load.csv
+#<Wind>                     : wind.csv
+#<Solar>                    : solar.csv
+#<Interchange>             : interchange.csv
+<Locations>                : locations.csv
+<AirTemperatureDerating>   : deratingByCategory.csv
+%%%%
+#<Zone IntraConnect>        : zoneIntraConnect.csv
+#<Zone InterConnect>        : zoneInterConnect.csv
+<Zone Connections> : zoneConnections.csv
+%%%%

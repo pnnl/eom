@@ -1,0 +1,1 @@
+The first generator's fuel cost is slightly cheaper so it will be favored with both are on and chosen to be turned on first, making this test deterministic.  The startup cost is high relative to the fuel input cost, so both generators will stay on between peaks.

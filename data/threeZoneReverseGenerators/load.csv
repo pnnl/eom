@@ -1,0 +1,4 @@
+Load,Load source file,ba,zone
+Load 000,triangle_550_900_1440_43200_[100]_[10080_20],0,0
+Load 001,100,0,1
+Load 002,100,0,2

@@ -1,0 +1,34 @@
+close all;
+clear all;
+clc;
+dir=['C:\D3x044\EOM\TestApril4th2013\'];
+eomfile=[dir 'EOM_Results by cat.xlsx'];
+[eomdata,eomheader, eomtot]=xlsread(eomfile,'ST Coal_EOM');
+promodfile=[dir 'East 9_0_2006_Release2Cons_2010_EOMMultiZone_1year_HourlyGenbyCat_all.xlsx'];
+[promoddata, promodheader,promodtot]=xlsread(promodfile);
+
+for i=1:39
+    plotdata= promoddata((i-1)*24*7+1:i*24*7,11);
+    ymin1=min(plotdata);
+    ymax1=max(plotdata);
+    ymin2=min(eomdata(:,i));
+    ymax2=max(eomdata(:,i));
+    ymax=max([ymax1 ymax2]);
+    ymin=min([ymin1 ymin2]);
+
+    figure(i);
+    plot(eomdata(:,i));
+    hold on
+    plot(plotdata,'r');
+    if ymax/ymin<1.1
+        ymax=1.1*ymin;
+        ymin=0.9*ymin;
+        axis([1 168 ymin ymax]);
+    else
+        axis auto;
+        
+    end
+    
+
+    saveas(gcf,['CT_Gas_' eomtot{1,i}],'emf');
+end

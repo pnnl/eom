@@ -1,0 +1,5 @@
+Name,(bp0;hr0);(bp1;hr1)#(bp1;hr1);(bp2;hr2)#(bp2;hr2);(bp3;hr3),ramp down rate (MW/hr),ramp up rate (MW/hr),shutdown cost (K$),startup cost (K$),Balancing Authority,Zone,Cat,Fuel Cost ($/MMBtu),can commit,can load follow,can regulate,minimum downtime (hours),minimum uptime (hours),NOx rate (lbs/MMBtu),SOx rate (lbs/MMBtu),CO2 rate (lbs/MMBtu)
+ALLEN CT-3,(20;500);(1000;1500),3000,3000,1000,10,0,0,NATURALGAS,200,TRUE,TRUE,TRUE,1,1,10,10,10
+ALLEN CT-4,(225;500);(1000;1500),3000,3000,1000,10,0,0,NATURALGAS,100,TRUE,TRUE,TRUE,1,4,10,10,10
+CLARK MT-1,(250;500);(1000;1500),3000,3000,1000,10,0,0,DIESEL,50,TRUE,TRUE,TRUE,1,1,10,10,10
+CLARK MT-2,(275;500);(1000;1500),3000,3000,1000,10,0,0,DIESEL,25,TRUE,TRUE,TRUE,1,1,10,10,10

@@ -1,0 +1,37 @@
+Total Cost for PROMODResultsinEOMOutputFormat/ramp-0.csv: 227700344.22
+Total Cost for PROMODResultsinEOMOutputFormat/ramp-1.csv: 238547736.62
+Total Cost for PROMODResultsinEOMOutputFormat/ramp-2.csv: 251743512.40
+Total Cost for PROMODResultsinEOMOutputFormat/ramp-3.csv: 254857337.08
+Total Cost for PROMODResultsinEOMOutputFormat/ramp-4.csv: 246787868.11
+Total Cost for PROMODResultsinEOMOutputFormat/ramp-5.csv: 240940420.41
+Total Cost for PROMODResultsinEOMOutputFormat/ramp-6.csv: 233474128.16
+Total cost for all periods: 1694051347.02
+Total co2 emitted: 41529303.56 short tons
+Total sox emitted: 60454.70 short tons
+Total nox emitted: 28895.12 short tons
+
+Total Cost for results/ramp-0.csv: 208827675.48
+Total Cost for results/ramp-1.csv: 229497480.88
+Total Cost for results/ramp-2.csv: 243442503.28
+Total Cost for results/ramp-3.csv: 246300191.24
+Total Cost for results/ramp-4.csv: 234037914.62
+Total Cost for results/ramp-5.csv: 223428707.79
+Total Cost for results/ramp-6.csv: 214285648.42
+Total cost for all periods: 1599820121.70
+Total co2 emitted: 43040154.12 short tons
+Total sox emitted: 64306.49 short tons
+Total nox emitted: 31904.15 short tons
+
+Total Cost for PROMODResultsinEOMOutputFormat/ramp-0.csv: 236095192.70
+Total Cost for PROMODResultsinEOMOutputFormat/ramp-1.csv: 247015050.35
+Total Cost for PROMODResultsinEOMOutputFormat/ramp-2.csv: 261058080.42
+Total Cost for PROMODResultsinEOMOutputFormat/ramp-3.csv: 264650789.36
+Total Cost for PROMODResultsinEOMOutputFormat/ramp-4.csv: 256317018.09
+Total Cost for PROMODResultsinEOMOutputFormat/ramp-5.csv: 250467920.81
+Total Cost for PROMODResultsinEOMOutputFormat/ramp-6.csv: 242802169.58
+Total cost for all periods: 1758406221.30
+Total co2 emitted: 43116631.54 short tons
+Total sox emitted: 62800.60 short tons
+Total nox emitted: 29968.35 short tons
+
+

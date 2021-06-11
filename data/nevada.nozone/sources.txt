@@ -1,0 +1,19 @@
+<Simulation Requirements>  : data/nevada.nozone/simulation.csv
+%%%%
+#Model Parameters and Initialization
+<Balancing Authority>      : data/nevada.nozone/ba.csv
+<Zone>                     : data/nevada.nozone/zone.csv
+<Conventional Generator >  : data/nevada.nozone/generators.csv
+#<Hydro>                   : data/nevada.nozone/dams.csv
+#<Storage>                 : data/nevada.nozone/storage.csv
+%%%%
+
+Time Series File Set
+<Load>                     : data/nevada.nozone/load.csv
+#<Wind>                    : data/nevada.nozone/wind.csv
+<Solar>                    : data/nevada.nozone/solar.csv
+#<Interchange>             : data/nevada.nozone/interchange.csv
+%%%%
+<Zone IntraConnect>        : data/nevada.nozone/zoneIntraConnect.csv
+#<Zone InterConnect>        : data/nevada.nozone/zoneInterConnect.csv
+%%%%

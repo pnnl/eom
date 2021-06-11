@@ -1,0 +1,19 @@
+<Simulation Requirements>  : simulation.csv
+%%%%
+#Model Parameters and Initialization
+<Balancing Authority>      : ba.csv
+<Zone>                     : zone.csv
+<Conventional Generator >  : gen118_database_fix_HR_modi_Ramp.csv
+#<Hydro>                   : dams.csv
+#<Storage>                 : storage.csv
+%%%%
+
+Time Series File Set
+<Load>                     : load.csv
+#<Wind>                     : wind.csv
+#<Solar>                    : solar.csv
+#<Interchange>             : interchange.csv
+%%%%
+<Zone IntraConnect>        : zoneIntraConnect.csv
+#<Zone InterConnect>        : zoneInterConnect.csv
+%%%%
