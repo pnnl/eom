@@ -1,0 +1,5 @@
+Name,Input-Output curve (Power output in MW; Fuel input in MMBtu/hr),ramp down rate (MW/hr),ramp up rate (MW/hr),shutdown cost (K$),startup cost (K$),Balancing Authority,Zone,Fuel Type,Fuel Cost ($/MMBtu),can commit,can load follow,can regulate,minimum downtime (hours),minimum uptime (hours),NOx rate (lbs/MMBtu),SOx rate (lbs/MMBtu),CO2 rate (lbs/MMBtu)
+Generator 000,(10;20);(100;200),600,600,10,10,0,0,NATURALGAS,0.1,TRUE,TRUE,TRUE,1,1,0,0,0
+Generator 001,(10;20);(60;120),600,600,10,10,0,0,NATURALGAS,0.1,TRUE,TRUE,TRUE,1,1,0,0,0
+Generator 002,(10;20);(100;400),600,600,10,10,0,0,NATURALGAS,2.5,TRUE,TRUE,TRUE,1,1,0,0,0
+Generator 003,(10;100);(800;8000),600,600,10,10,0,0,NATURALGAS,3.5,TRUE,TRUE,TRUE,1,1,0,0,0
