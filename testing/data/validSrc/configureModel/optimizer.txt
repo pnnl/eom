@@ -1,0 +1,14 @@
+Static Optimizer
+    DayAhead
+    Objective function
+        MinimizePowerCost
+    Hard constraints
+        PowerBalance
+        PowerLimitConstraint
+        RampConstraint
+        ReserveConstraint
+        
+
+
+
+
