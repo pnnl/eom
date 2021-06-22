@@ -1,0 +1,16 @@
+<Simulation Requirements>  : units/data/rimParserTests/basic/simulation.csv
+%%%%
+#Model Parameters and Initialization
+<Balancing Authority>      : units/data/rimParserTests/basic/ba.csv
+<Zone>                     : units/data/rimParserTests/basic/zone.csv
+<Conventional Generator >  : units/data/rimParserTests/basic/generators.csv
+#<Hydro>                   : units/data/rimParserTests/basic/dams.csv
+#<Storage>                 : units/data/rimParserTests/basic/storage.csv
+%%%%
+
+Time Series File Set
+<Load>                     : units/data/rimParserTests/basic/load.csv
+<Wind>                     : units/data/rimParserTests/basic/wind.csv
+<Solar>                    : units/data/rimParserTests/basic/solar.csv
+#<Interchange>             : units/data/rimParserTests/basic/interchange.csv
+%%%%

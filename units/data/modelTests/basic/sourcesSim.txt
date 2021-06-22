@@ -1,0 +1,16 @@
+<Simulation Requirements>  : testing/data/configTests/base/simulation.csv
+%%%%
+#Model Parameters and Initialization
+#<Balancing Authority>      : testing/data/configTests/base/ba.csv
+#<Zone>                     : testing/data/configTests/base/zone.csv
+#<Conventional Generator >  : testing/data/configTests/base/generators.csv
+#<Hydro>                   : testing/data/configTests/base/dams.csv
+#<Storage>                 : testing/data/configTests/base/storage.csv
+%%%%
+
+Time Series File Set
+#<Load>                     : testing/data/configTests/base/load.csv
+#<Wind>                     : testing/data/configTests/base/wind.csv
+#<Solar>                    : testing/data/configTests/base/solar.csv
+#<Interchange>             : testing/data/configTests/base/interchange.csv
+%%%%

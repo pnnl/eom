@@ -1,0 +1,42 @@
+This is a temporary file for the current set of compilation directions.
+
+I've changed the makefile by adding input parameter specifications in the makefile. If you
+look at cond.mk in the RIM_PROJECT/makes directory, you will see the neccessary input parameters.
+
+The input parameters are:
+    debug
+        yes  => adds -g to CFLAGS
+        verbose => not implemented, may be removed
+        <default none>
+    verbose
+        yes  => adds -DRIM_DUMP to CFLAGS, this dumps all RIM data to a log file
+        <default no>
+    time
+        compressed => adds -DCOMPRESSED to CFLAGS. This alters the representation of time
+                      as follows:
+                             #define MINUTES_IN_DAY           8
+                             #define HOURS_IN_DAY             2
+                             #define MINUTES_IN_HOUR          4
+                      the default values are:
+                             #define MINUTES_IN_DAY        1440
+                             #define HOURS_IN_DAY            24
+                             #define MINUTES_IN_HOUR         60
+    optimizer
+        cplex => sets the OPTIMIZER and INCL_OPTIMIZER macros in the make file to the 
+                 cplex code set
+        no_opt => sets the OPTIMIZER and INCL_OPTIMIZER macros in the make file to the
+                 no_opt code set
+        <default no_opt>
+    obj_type : NOTE this is only used in conjunction with cplex
+        single => sets the OBJECTIVES macro to the $(OBJECTIVES)/single path, this configures
+                  the power cost curve to a PWLinear curve with a single piece
+        multiple => sets the OBJECTIVES macro to the $(OBJECTIVES)/multiple path, this
+                  configures the power cost curve to a PWLinear curve with multiple pieces.
+        <default linear> This sets the OBJECTIVES macro to the $(OBJECTIVES)/linear path,
+                  this configures the power cost curve to a linear curve. That is, it 
+                  does not use the algorithms associated with piece wise linear representations.
+    model_type :
+	base : this is only model we have at the moment.
+        <default base>
+
+

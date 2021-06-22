@@ -1,0 +1,6 @@
+Load,Load source file,ba,zone
+Load 000,testing/data/validSrc/time_series/testLoad,0,0
+Load 010,testing/data/validSrc/time_series/testLoad,0,1
+Load 020,testing/data/validSrc/time_series/testLoad,0,2
+Load 100,testing/data/validSrc/time_series/testLoad,1,3
+Load 110,testing/data/validSrc/time_series/testLoad,1,4

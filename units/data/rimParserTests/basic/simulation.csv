@@ -1,0 +1,2 @@
+Simulation,Start date (00:00),End date (23:59),Size of dump file,Time Step (min),Day ahead trigger time,Day ahead time step (min),Day ahead lookahead length (hr),Load following time steps (min),Load following lookahead length (min),Regulation time step (min),Hydro time step (min),Days of Forecast Buffer,N repeats,Repeat Type (none, mc (monte carlo),  sa (sensitivity analysis))
+Test 1,12/31/2001,01/01/2002,8,1,0,4,4,2,4,1,0,4,0,none,,

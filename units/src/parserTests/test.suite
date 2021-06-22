@@ -1,0 +1,107 @@
+SimulationParser(const char * fileName);
+virtual ~SimulationParser(){};
+virtual void setModels(char * parameters, char * interface, SimulationInfo * info);
+void setDerivedData(char * parameters, char * interface, SimulationInfo * info);
+virtual LOGICAL validateInput(char * parameters, char * interface, SimulationInfo * info);
+virtual INTEGER getCount() {return countLines()-1;};
+REPEAT_TYPE setRepeatType();
+
+
+RIMParser tests ===============================================
+Constrution tests ---------------------------------------------
+static RIMParser * getRIMParser(const char * fileName)
+static RIMParser * getRIMParser()
+static SimulationInfo * getRIMSimInfo()
+virtual ~RIMParser();
+void  configure();
+
+Transfer/access tests -----------------------------------------
+INTEGER  * xferInterfaceOffset()INTEGER  * xferInterfaceStepOffset()
+char   * xferInterfaceSpace()
+BalanceAuthParams * getBalanceAuthParams(INTEGER ba)
+ZoneParams * getZoneParams(INTEGER zone)
+ConventionalParams * getConventionalParams(INTEGER gen)
+StorageParams * getStorageParams(INTEGER store)
+HydroParams * getHydroParams(INTEGER hydro)
+LoadParams * getLoadParams(INTEGER load)
+WindParams * getWindParams(INTEGER wind)
+SolarParams * getSolarParams(INTEGER solar)
+InterchangeParams * getInterchangeParams(INTEGER ic){return baZonePopulation[ba];};
+INTEGER     getBAZoneOffset(INTEGER ba)
+INTEGER     getBAZoneReorder(INTEGER gen)
+INTEGER     getBAGenPopulation(INTEGER ba)
+INTEGER     getBAGenOffset(INTEGER ba)
+INTEGER     getBAGenReorder(INTEGER gen)
+INTEGER     getZoneGenPopulation(INTEGER zone)
+INTEGER     getZoneGenOffset(INTEGER zone)
+INTEGER     getZoneGenReorder(INTEGER gen)
+INTEGER   * getZoneGenOffset()
+INTEGER     getZoneLoadOffset(INTEGER zone)
+INTEGER     getZoneLoadReorder(INTEGER gen)
+INTEGER     getZoneWindPopulation(INTEGER zone)
+INTEGER     getZoneWindOffset(INTEGER zone)
+INTEGER     getZoneWindReorder(INTEGER gen)
+INTEGER     getZoneSolarPopulation(INTEGER zone)
+INTEGER     getZoneSolarOffset(INTEGER zone)
+INTEGER     getZoneSolarReorder(INTEGER gen)
+INTEGER     getZoneCommitPopulation(INTEGER zone)
+INTEGER     getZoneCommitOffset(INTEGER zone)
+INTEGER     getZoneRegulationPopulation(INTEGER zone)
+INTEGER     getZoneRegulationOffset(INTEGER zone)
+INTEGER getModelCount(INTEGER model)
+ModelParser   * getModelParser(INTEGER model)
+
+RIM construction process tests --------------------------------
+void loadSourceFiles()
+ModelParser *  configureForParsing(MODEL_TYPES modelType);
+void  collectModelInformation();
+void  constructParameterSpace();
+void  constructInterfaceSpace();
+
+Subspace configuration tests ----------------------------------
+void  configureBAZoneSpace();
+void  configureZoneGeneratorSpace();
+void  configureBAGeneratorSpace();
+void  configureZoneLoadSpace();
+void  configureZoneWindSpace();
+void  configureZoneSolarSpace();
+void  configureZoneCommitSpace();
+void  configureZoneRegulateSpace();
+void  resolveDependenies()
+void  setupZoneBAIDs();
+void  setupGenZoneIDs();
+void  setupLoadIDs();
+void  assignOffsets();
+void dumpMetadata();
+
+char                  ** srcFileName;
+ModelParser           ** modelParser;        // list of parsers for 
+INTEGER                * modelCount;
+INTEGER                * parameterSize;      // size of each model's data set
+INTEGER                * interfaceSize;      // size of each model's parameter set
+INTEGER                * parameterOffset;
+char                   * parameterSpace;
+INTEGER                * interfaceOffset;
+INTEGER                * interfaceStepOffset;
+char                   * interfaceSpace;
+INTEGER                * baZonePopulation;
+INTEGER                * baZoneOffset;
+INTEGER                * baZoneReordering;
+INTEGER                * baGenPopulation;
+INTEGER                * baGenOffset;
+INTEGER                * baGenReordering;
+INTEGER                * zoneGenPopulation;
+INTEGER                * zoneGenOffset;
+INTEGER                * zoneGenReordering;
+INTEGER                * zoneCommitPopulation;
+INTEGER                * zoneCommitOffset;
+INTEGER                * zoneRegulatePopulation;
+INTEGER                * zoneRegulateOffset;
+INTEGER                * zoneLoadOffset;
+INTEGER                * zoneLoadReordering;
+INTEGER                * zoneWindPopulation;
+INTEGER                * zoneWindOffset;
+INTEGER                * zoneWindReordering;
+INTEGER                * zoneSolarPopulation;
+INTEGER                * zoneSolarOffset;
+INTEGER                * zoneSolarReordering;
